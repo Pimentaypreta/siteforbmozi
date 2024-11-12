@@ -11,10 +11,10 @@ body {
     background-color: #720e9e;
     color: #000;
     text-align: center;
-    font-size: 14px; /* Reduzido para uma leitura confortável em mobile */
+    font-size: 18px; /* Fonte aumentada para melhorar a leitura */
     -webkit-text-stroke-width: 0.5px;
     -webkit-text-stroke-color: #fff;
-    line-height: 1.5;
+    line-height: 1.6;
 }
 
 /* Container centralizado e responsivo */
@@ -34,12 +34,12 @@ body {
     background-color: #EE82EE;
     border: none;
     color: #000;
-    padding: 0.8em 1.5em; /* Botão menor para mobile */
-    font-size: 1em; /* Ajustado para mobile */
+    padding: 0.8em 1.5em;
+    font-size: 1.1em; /* Ajuste do tamanho do botão */
     cursor: pointer;
     transition: transform 0.3s ease;
     margin: 1em auto;
-    max-width: 200px; /* Limita o tamanho para evitar botões largos em mobile */
+    max-width: 250px;
 }
 
 #special-button:hover {
@@ -51,7 +51,7 @@ body {
     background-color: #720e9e;
     color: #fff;
     padding: 1em;
-    font-size: 1.2em;
+    font-size: 1.5em; /* Texto maior */
     margin-top: 2%;
 }
 
@@ -67,11 +67,11 @@ button {
     background-color: rgb(255, 0, 0);
     border: none;
     color: #000;
-    padding: 0.6em 1em;
-    font-size: 0.9em; /* Fontes menores e padronizadas */
+    padding: 0.8em 1.2em;
+    font-size: 1em;
     cursor: pointer;
     width: 80%;
-    max-width: 200px; /* Limite de largura ajustado */
+    max-width: 250px;
     transition: background-color 0.3s ease;
     border-radius: 6px;
 }
@@ -83,10 +83,10 @@ button:hover {
 /* Estilo do container dos vídeos */
 .video-container {
     padding: 1em;
-    font-size: 1em; /* Texto menor para descrições */
+    font-size: 1.2em;
 }
 
-/* Ajuste do vídeo para tamanho padrão de player */
+/* Ajuste do vídeo para evitar compressão */
 .video {
     margin: 1em auto;
     width: 100%;
@@ -95,23 +95,27 @@ button:hover {
 
 iframe {
     width: 100%;
-    height: auto;
-    max-height: 315px;
+    height: 350px; /* Aumentado para evitar compressão */
+    max-height: 350px;
     background: #000;
 }
 
 /* Media Query para Telas Menores */
 @media (max-width: 768px) {
     body {
-        font-size: 12px;
+        font-size: 16px; /* Aumenta a fonte em mobile */
     }
 
     #special-button, button {
-        font-size: 0.9em;
-        padding: 0.6em 1em;
+        font-size: 1em;
+        padding: 0.8em 1.2em;
     }
 
     .question-container {
-        font-size: 1em;
+        font-size: 1.3em;
+    }
+
+    iframe {
+        height: 400px; /* Ajuste maior para telas menores */
     }
 }
