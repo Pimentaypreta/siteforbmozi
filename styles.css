@@ -11,9 +11,10 @@ body {
     background-color: #720e9e;
     color: #000;
     text-align: center;
-    font-size: 1.5em; /* Ajuste de tamanho relativo */
+    font-size: 16px; /* Tamanho base ideal */
     -webkit-text-stroke-width: 0.5px;
     -webkit-text-stroke-color: #fff;
+    line-height: 1.6;
 }
 
 /* Container centralizado e responsivo */
@@ -24,6 +25,8 @@ body {
     text-align: center;
     padding: 1em;
     margin: 0 auto;
+    max-width: 90%; /* Limita a largura */
+    width: 100%;
 }
 
 /* Estilo do botão especial */
@@ -32,25 +35,24 @@ body {
     border: none;
     color: #000;
     padding: 1em 2em;
-    font-size: 2em;
+    font-size: 1.2em; /* Menor e proporcional */
     cursor: pointer;
     transition: transform 0.3s ease;
-    margin: 2em auto;
-    width: 90%; /* Responsivo para telas menores */
+    margin: 1em auto;
     max-width: 300px;
 }
 
 #special-button:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 /* Estilo do container da pergunta */
 .question-container {
     background-color: #720e9e;
-    color: #000;
+    color: #fff;
     padding: 1em;
-    font-size: 1.8em;
-    margin-top: 5%;
+    font-size: 1.4em;
+    margin-top: 2%;
 }
 
 /* Estilo dos botões */
@@ -65,13 +67,13 @@ button {
     background-color: rgb(255, 0, 0);
     border: none;
     color: #000;
-    padding: 0.8em 1.5em;
-    font-size: 1.2em;
+    padding: 0.8em 1em;
+    font-size: 1em; /* Tamanho de fonte menor */
     cursor: pointer;
-    width: 90%;
-    max-width: 300px;
+    width: 80%;
+    max-width: 250px; /* Limite de largura */
     transition: background-color 0.3s ease;
-    border-radius: 8px; /* Para suavizar os botões */
+    border-radius: 6px;
 }
 
 button:hover {
@@ -81,12 +83,14 @@ button:hover {
 /* Estilo do container dos vídeos */
 .video-container {
     padding: 1em;
+    font-size: 1.2em; /* Texto menor para descrições */
 }
 
 .video {
     margin: 1em auto;
     width: 100%;
     max-width: 560px;
+    height: auto;
 }
 
 iframe {
