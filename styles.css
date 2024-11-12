@@ -1,0 +1,97 @@
+/* Reset básico de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo geral do corpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #720e9e;
+    color: #000;
+    text-align: center;
+    font-size: 1.5em; /* Ajuste de tamanho relativo */
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #fff;
+}
+
+/* Container centralizado e responsivo */
+.container, .video-container, .question-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1em;
+    margin: 0 auto;
+}
+
+/* Estilo do botão especial */
+#special-button {
+    background-color: #EE82EE;
+    border: none;
+    color: #000;
+    padding: 1em 2em;
+    font-size: 2em;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    margin: 2em auto;
+    width: 90%; /* Responsivo para telas menores */
+    max-width: 300px;
+}
+
+#special-button:hover {
+    transform: scale(1.1);
+}
+
+/* Estilo do container da pergunta */
+.question-container {
+    background-color: #720e9e;
+    color: #000;
+    padding: 1em;
+    font-size: 1.8em;
+    margin-top: 5%;
+}
+
+/* Estilo dos botões */
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-top: 1em;
+}
+
+button {
+    background-color: rgb(255, 0, 0);
+    border: none;
+    color: #000;
+    padding: 0.8em 1.5em;
+    font-size: 1.2em;
+    cursor: pointer;
+    width: 90%;
+    max-width: 300px;
+    transition: background-color 0.3s ease;
+    border-radius: 8px; /* Para suavizar os botões */
+}
+
+button:hover {
+    background-color: #0c0;
+}
+
+/* Estilo do container dos vídeos */
+.video-container {
+    padding: 1em;
+}
+
+.video {
+    margin: 1em auto;
+    width: 100%;
+    max-width: 560px;
+}
+
+iframe {
+    width: 100%;
+    height: auto;
+    max-height: 315px;
+    background: #000;
+}
