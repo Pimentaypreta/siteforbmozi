@@ -17,15 +17,16 @@
 
     <script>
         document.getElementById('yes-button').addEventListener('click', function() {
-            window.location.href = 'videos.html';
+            window.location.href = 'videos.html'; <!-- Caminho correto -->
         });
+
         const noButton = document.getElementById('no-button');
         noButton.addEventListener('click', function() {
-        noButton.style.position = 'absolute';
-        noButton.style.top = `${Math.random() * 70 + 10}%`;
-        noButton.style.left = `${Math.random() * 70 + 10}%`;
-});
-
+            noButton.style.position = 'absolute';
+            noButton.style.top = `${Math.random() * 80 + 10}%`;
+            noButton.style.left = `${Math.random() * 80 + 10}%`;
+        });
     </script>
 </body>
 </html>
+
