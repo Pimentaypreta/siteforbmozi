@@ -11,10 +11,10 @@ body {
     background-color: #720e9e;
     color: #000;
     text-align: center;
-    font-size: 16px; /* Tamanho base ideal */
+    font-size: 14px; /* Reduzido para uma leitura confortável em mobile */
     -webkit-text-stroke-width: 0.5px;
     -webkit-text-stroke-color: #fff;
-    line-height: 1.6;
+    line-height: 1.5;
 }
 
 /* Container centralizado e responsivo */
@@ -25,7 +25,7 @@ body {
     text-align: center;
     padding: 1em;
     margin: 0 auto;
-    max-width: 90%; /* Limita a largura */
+    max-width: 90%;
     width: 100%;
 }
 
@@ -34,12 +34,12 @@ body {
     background-color: #EE82EE;
     border: none;
     color: #000;
-    padding: 1em 2em;
-    font-size: 1.2em; /* Menor e proporcional */
+    padding: 0.8em 1.5em; /* Botão menor para mobile */
+    font-size: 1em; /* Ajustado para mobile */
     cursor: pointer;
     transition: transform 0.3s ease;
     margin: 1em auto;
-    max-width: 300px;
+    max-width: 200px; /* Limita o tamanho para evitar botões largos em mobile */
 }
 
 #special-button:hover {
@@ -51,7 +51,7 @@ body {
     background-color: #720e9e;
     color: #fff;
     padding: 1em;
-    font-size: 1.4em;
+    font-size: 1.2em;
     margin-top: 2%;
 }
 
@@ -59,7 +59,7 @@ body {
 .buttons {
     display: flex;
     flex-direction: column;
-    gap: 1em;
+    gap: 0.8em;
     margin-top: 1em;
 }
 
@@ -67,11 +67,11 @@ button {
     background-color: rgb(255, 0, 0);
     border: none;
     color: #000;
-    padding: 0.8em 1em;
-    font-size: 1em; /* Tamanho de fonte menor */
+    padding: 0.6em 1em;
+    font-size: 0.9em; /* Fontes menores e padronizadas */
     cursor: pointer;
     width: 80%;
-    max-width: 250px; /* Limite de largura */
+    max-width: 200px; /* Limite de largura ajustado */
     transition: background-color 0.3s ease;
     border-radius: 6px;
 }
@@ -83,14 +83,14 @@ button:hover {
 /* Estilo do container dos vídeos */
 .video-container {
     padding: 1em;
-    font-size: 1.2em; /* Texto menor para descrições */
+    font-size: 1em; /* Texto menor para descrições */
 }
 
+/* Ajuste do vídeo para tamanho padrão de player */
 .video {
     margin: 1em auto;
     width: 100%;
     max-width: 560px;
-    height: auto;
 }
 
 iframe {
@@ -98,4 +98,20 @@ iframe {
     height: auto;
     max-height: 315px;
     background: #000;
+}
+
+/* Media Query para Telas Menores */
+@media (max-width: 768px) {
+    body {
+        font-size: 12px;
+    }
+
+    #special-button, button {
+        font-size: 0.9em;
+        padding: 0.6em 1em;
+    }
+
+    .question-container {
+        font-size: 1em;
+    }
 }
